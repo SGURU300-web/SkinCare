@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Skincare Application</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our skincare application! We provide personalized skincare routines and product recommendations.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product">
+                <h3>Moisturizer</h3>
+                <p>Hydrating moisturizer for all skin types.</p>
+                <button onclick="addToCart('Moisturizer')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Sunscreen</h3>
+                <p>SPF 50 sunscreen for daily protection.</p>
+                <button onclick="addToCart('Sunscreen')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Cleanser</h3>
+                <p>Gentle cleanser for a fresh start.</p>
+                <button onclick="addToCart('Cleanser')">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Skincare Application. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
