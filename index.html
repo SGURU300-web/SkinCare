@@ -3,65 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skincare Application</title>
+    <title>Noore - Skincare Simplified</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Skincare Application</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Noore</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to our skincare application! We provide personalized skincare routines and product recommendations.</p>
-        </section>
-
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product">
-                <h3>Moisturizer</h3>
-                <p>Hydrating moisturizer for all skin types.</p>
-                <button onclick="addToCart('Moisturizer')">Add to Cart</button>
-            </div>
-            <div class="product">
-                <h3>Sunscreen</h3>
-                <p>SPF 50 sunscreen for daily protection.</p>
-                <button onclick="addToCart('Sunscreen')">Add to Cart</button>
-            </div>
-            <div class="product">
-                <h3>Cleanser</h3>
-                <p>Gentle cleanser for a fresh start.</p>
-                <button onclick="addToCart('Cleanser')">Add to Cart</button>
+        <section class="hero">
+            <div class="container">
+                <h2>Skincare Simplified</h2>
+                <p>Discover your natural beauty with our curated skincare products.</p>
+                <a href="#products" class="cta-button">Shop Now</a>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Noore</h2>
+                <p>Noore is dedicated to providing high-quality skincare solutions that enhance your natural beauty. Our products are formulated with care, using only the best ingredients.</p>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product">
+                    <h3>Hydrating Cream</h3>
+                    <p>A lightweight cream that provides all-day hydration.</p>
+                    <button onclick="addToCart('Hydrating Cream')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Daily Sunscreen</h3>
+                    <p>Protect your skin with our broad-spectrum SPF 50 sunscreen.</p>
+                    <button onclick="addToCart('Daily Sunscreen')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Gentle Cleanser</h3>
+                    <p>Cleanse your skin without stripping its natural oils.</p>
+                    <button onclick="addToCart('Gentle Cleanser')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Latest from Our Blog</h2>
+                <p>Check out our latest articles on skincare tips and product benefits.</p>
+                <a href="#" class="cta-button">Read More</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Skincare Application. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 Noore. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
